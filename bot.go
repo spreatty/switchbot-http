@@ -45,7 +45,7 @@ const pingInterval = time.Minute + time.Second*30
 
 type Bot struct {
 	address    ble.Address
-	device     *ble.Device
+	device     ble.Device
 	service    *ble.DeviceService
 	writeChar  *ble.DeviceCharacteristic
 	notifyChar *ble.DeviceCharacteristic
